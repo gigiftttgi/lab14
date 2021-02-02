@@ -17,3 +17,19 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d)
+{
+	int arr[4]={50,100,500,1000};
+		int i,j,k,l;
+	do{
+		i=rand()%4;
+		j=rand()%4;
+		k=rand()%4;
+		l=rand()%4;
+	}while(i==j or i==k or i==l or j==k or j==l or k==l);
+	a=arr[i];
+	b=arr[j];
+	c=arr[k];
+	d=arr[l];
+}
